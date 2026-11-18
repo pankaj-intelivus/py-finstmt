@@ -17,8 +17,8 @@ dependencies = [
 [project.optional-dependencies]
 forecast = ["prophet"]
 
-[tool.setuptools]
-py-modules = ['finstmt']
+[tool.setuptools.packages.find]
+include = ["finstmt*"]
 
 [tool.poetry]
 name = "finstmt"
