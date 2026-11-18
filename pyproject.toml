@@ -1,6 +1,21 @@
 [project]
 name = "finstmt"
-version = "1.2.2"
+version = "1.4.0"
+description = "Financial statement data: loading, derivation, and forecasting."
+requires-python = ">=3.8.1"
+license = {text = "MIT"}
+dependencies = [
+    "pandas>=2.0",
+    "sympy>=1.12",
+    "xlrd>=2.0",
+    "matplotlib>=3.7",
+    "tqdm>=4.65",
+    "statsmodels>=0.14",
+    "typing-extensions>=4.0.1",
+]
+
+[project.optional-dependencies]
+forecast = ["prophet"]
 
 [tool.setuptools]
 py-modules = ['finstmt']
